@@ -552,6 +552,11 @@ body {
   gap: 20px;
 }
 .footer-contact-about__social-icon {
+  transition: opacity 0.3s ease 0s;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 .footer-social-icon_01 {
   background: url("../img/footer/social-icon/footer-social-icon_facebook.svg")
