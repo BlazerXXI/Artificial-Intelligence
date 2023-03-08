@@ -294,7 +294,10 @@ body {
   }
 }
 .apply-ai-block__img-apply-ai-block {
-  margin: 0px 0px 170px -131px;
+  @media (min-width: 769px) {
+    margin: 0px 0px 170px -131px;
+  }
+  margin: 0px 0px 3rem 0px;
 }
 .img-apply-ai-block__image {
   background: url("../img/apply-ai/apply-ai-bg-img/apply-ai-bg-img.png") center
@@ -305,6 +308,7 @@ body {
 /* -------------feature----------- */
 .feature {
   width: 1146.44px;
+
   padding: 0px 0px 150px 0px;
   margin: 0px auto;
   overflow: hidden;
@@ -319,6 +323,10 @@ body {
   text-align: center;
   gap: 30px;
   transition: margin-left 400ms;
+  @media (max-width: 769px) {
+    overflow-y: scroll;
+    width: 100vw;
+  }
 }
 .feature__item {
   > *:not(:last-child) {
@@ -365,6 +373,9 @@ body {
 }
 
 .feature__ellipse {
+  @media (max-width: 769px) {
+    display: none;
+  }
   margin: 50px 0px 20px 0px;
 }
 .feature-ellipse {
@@ -395,6 +406,12 @@ body {
 }
 .about__container {
   display: flex;
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
 }
 .about__text-block {
   margin: auto 0px;
@@ -407,7 +424,9 @@ body {
 .about-text__title {
 }
 .about-text__block-text {
-  max-width: 460px;
+  @media (min-width: 769px) {
+    max-width: 460px;
+  }
   > *:not(:last-child) {
     margin: 0px 0px 20px 0px;
   }
@@ -440,7 +459,10 @@ body {
 .footer__container {
   display: flex;
   gap: 30px;
-
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   > * {
     flex: 0 1 33.333%;
   }
