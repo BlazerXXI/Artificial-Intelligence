@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "name": "artificial-intelligence",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Artiffical"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
